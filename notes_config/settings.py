@@ -25,7 +25,7 @@ SECRET_KEY = '42fdmuups493bwb-p&!!yhz(67!9ax-i()mh+jyc(di8=w)e@g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -54,10 +54,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# #Adding Cors Headers 
-# CORS_ORIGIN_WHITELIST = (
-#     'localhost:3000',
-# )
+#Adding Cors Headers 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000"
+]
 
 
 ROOT_URLCONF = 'notes_config.urls'
